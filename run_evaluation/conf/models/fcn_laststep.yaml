@@ -1,0 +1,19 @@
+model: ## hierarchical
+  selected_model: "FCN_laststep" # model name
+
+  ## deep learning hyperparameters
+  use_fc: True
+  use_pooling: False
+  use_adaptive_lr: True
+  multiply_factor: 0.9
+  batch_size: 32
+  dropout: 0.2
+  lr: 0.001  # learning rate
+  patience: 500 # for early stopping
+  epochs: 2000
+
+  kernel_size: [7, 5, 3, 3]
+  ch_out: [16, 32, 32, 16, 16]
+
+  ## Deep learning criterions and save log
+  criterions: ["loss", "accuracy", "f1_score", "precision", "recall"]

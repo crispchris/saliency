@@ -1,0 +1,6 @@
+node: ## hierarchical
+  ## load data
+  #root_dir: "../"
+  dataset_name: "FordA"
+  multivariate: False
+  random_seeds: [52, 53]

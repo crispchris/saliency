@@ -1,0 +1,20 @@
+model: ## hierarchical
+  selected_model: "TCN_laststep" # model name
+
+  ## deep learning hyperparameters
+  use_fc: True
+  use_pooling: False
+  use_adaptive_lr: True
+  multiply_factor: 0.9
+  batch_size: 32
+  dropout: 0.2
+  lr: 0.002  # learning rate
+  patience: 500 # for early stopping
+  epochs: 1000
+
+  dilation: [1, 2, 4, 8] ## should be always same size as ch_out
+  kernel_size: [7, 5, 5, 5] ## the size also should be the same as ch_out
+  ch_out: [32, 64, 64, 64, 64]
+
+  ## Deep learning criterions and save log
+  criterions: ["loss", "accuracy", "f1_score", "precision", "recall"]

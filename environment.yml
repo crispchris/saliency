@@ -1,0 +1,32 @@
+vname: saliency
+channels:
+  - pytorch
+  - nvidia
+  - defaults
+  - conda-forge
+dependencies:
+  # 4.0.2 should make the -crf option
+  - ffmpeg=4.0.2
+  - x264
+  - python=3.8
+  - pip
+  - pillow==8.3.2
+  # PyTorch
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cudatoolkit=11.3
+  # Visualization & Analysis
+  - matplotlib
+  - numpy
+  - pandas
+  - seaborn
+  - h5py
+  - pip:
+    - hydra-core
+    - hydra-ax-sweeper
+    - hydra-nevergrad-sweeper
+    - hydra-optuna-sweeper
+    - hydra-submitit-launcher
+    - sktime
+    - tables

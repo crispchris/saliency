@@ -1,0 +1,21 @@
+model: ## hierarchical
+  selected_model: "TCN_withoutFC" # model name
+
+  ## deep learning hyperparameters
+  use_fc: False
+  use_pooling: True
+  use_adaptive_lr: True
+  multiply_factor: 0.9
+  batch_size: 32
+  val_batch_size: 64
+  dropout: 0.3
+  lr: 0.002  # learning rate
+  patience: 500 # for early stopping
+  epochs: 2000
+
+  dilation: [1, 2, 4, 8] ## should be always same size as ch_out
+  kernel_size: [5, 5, 5, 5] ## the size also should be the same as ch_out
+  ch_out: [32, 64, 64, 64]
+
+  ## Deep learning criterions and save log
+  criterions: ["loss", "accuracy", "f1_score", "precision", "recall"]

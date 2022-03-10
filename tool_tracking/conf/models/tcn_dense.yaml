@@ -1,0 +1,19 @@
+model: ## hierarchical
+  selected_model: "TCN_dense" # model name
+
+  ## deep learning hyperparameters
+  use_adaptive_lr: True
+  multiply_factor: 0.9
+  batch_size: 16
+  val_batch_size: 100
+  dropout: 0.2
+  lr: 0.01  # learning rate
+  patience: 400 # for early stopping
+  epochs: 1000
+
+  dilation: [1, 2, 4] ## should be always same size as ch_out
+  kernel_size: [5, 5, 5] ## the size also should be the same as ch_out
+  ch_out: [64, 128, 64]
+
+  ## Deep learning criterions and save log
+  criterions: ["loss", "accuracy", "f1_score", "precision", "recall"]

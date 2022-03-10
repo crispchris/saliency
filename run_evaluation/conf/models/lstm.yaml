@@ -1,0 +1,19 @@
+model: ## hierarchical
+  selected_model: "LSTM" # model name
+
+  ## deep learning hyperparameters
+  use_fc: False
+  use_adaptive_lr: True
+  multiply_factor: 0.9
+  batch_size: 16
+  dropout: 0.2
+  lr: 0.01  # learning rate
+  patience: 500 # for early stopping
+  epochs: 2000
+
+  hidden_size: 8
+  num_layers: 1
+  bidirectional: False
+
+  ## Deep learning criterions and save log
+  criterions: ["loss", "accuracy", "f1_score", "precision", "recall"]

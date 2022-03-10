@@ -1,0 +1,21 @@
+model: ## hierarchical
+  selected_model: "FCN_withoutFC" # model name
+
+  ## deep learning hyperparameters
+  use_fc: False
+  use_pooling: True
+  use_adaptive_lr: True
+  multiply_factor: 0.9
+  batch_size: 32
+  dropout: 0.0
+  loss_term: "None"
+  loss_lambda: 0.0
+  lr: 0.002  # learning rate
+  patience: 200 # for early stopping
+  epochs: 500
+
+  kernel_size: [7, 7, 5, 5, 3]
+  ch_out: [64, 128, 128, 64, 64]
+
+  ## Deep learning criterions and save log
+  criterions: ["loss", "accuracy", "f1_score", "precision", "recall"]

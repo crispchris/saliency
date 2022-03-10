@@ -1,0 +1,6 @@
+node: ## hierarchical
+  ## load data
+  #root_dir: "../"
+  dataset_name: "NATOPS"
+  multivariate: True
+  random_seeds: [52, 53]

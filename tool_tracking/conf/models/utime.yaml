@@ -1,0 +1,21 @@
+model: ## hierarchical
+  selected_model: "Utime" # model name
+
+  ## deep learning hyperparameters
+  use_adaptive_lr: True
+  multiply_factor: 0.9
+  batch_size: 16
+  val_batch_size: 100
+  dropout: 0.2
+  lr: 0.01  # learning rate
+  patience: 400 # for early stopping
+  epochs: 2000
+
+  kernel_size: 5 # the size also should be the same as ch_out
+  dilation: 2
+  ch_out: [16,32,64,128]
+  maxpool_kernels: [6,4,2,2]
+
+
+  ## Deep learning criterions and save log
+  criterions: ["loss", "accuracy", "f1_score", "precision", "recall"]

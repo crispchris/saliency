@@ -1,0 +1,25 @@
+node: ## hierarchical
+  ## load data
+  root_dir: "../"
+  dataset_name: "tool_tracking_detect"
+  source: "/data/tool-tracking/tool-tracking-data"
+  tool: "electric_screwdriver"
+
+  ## training setup (label selection)
+  garbage_labels: [-1]
+  label_summary: {"0":[6,7,8,14], "1":[2,3,4,5]}
+
+  ## data processing
+  windowing: True
+  znorm: True # zero normalization
+  balance: True
+  one_matrix: True
+  densely_labels: True
+  window_length: 0.2 # unit in s
+  overlap: 0.5 # unit in percent
+
+  ## train test split
+  test_size: 0.2
+
+  ## Random seeds
+  random_seeds: [50, 51, 52, 53, 54, 55]
