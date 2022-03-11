@@ -49,7 +49,6 @@ python ./tool_tracking/train.py
 ```
 4. Evaluate
 ```
-python ./tool_tracking/evaluation/io_salient_region.py --Dataset_name tool_tracking --Dataset_name_save tool_tracking --Experiments experiment_0 --DLModel TCN_dense --Threshold 0.5 --Save_scores_path iosr_scores.npy
 python ./tool_tracking/evaluation/iosr_precision_recall_ts_eval.py --Dataset_name tool_tracking --Dataset_name_save tool_tracking --Experiments experiment_0 --DLModel TCN_dense --Save_scores_path pointing_game_scores.npy
 ```
 
