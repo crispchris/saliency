@@ -57,6 +57,6 @@ python ./tool_tracking/evaluation/iosr_precision_recall_ts_eval.py --Dataset_nam
 License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License
 
 The code is largely adapted from external sources. Then the external licences apply
-* [Tool Tracking](https://github.com/mutschcr/tool-tracking)) 
+* [Tool Tracking](https://github.com/mutschcr/tool-tracking)
 * [Captum](https://captum.ai/)
 * and others (see each source file for specifics)
