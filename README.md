@@ -1,6 +1,16 @@
 # Don't get me wrong
 ## How to apply Deep Visual Interpretations to Time Series
-You can find the preprint here: TODO
+You can find the preprint here: https://arxiv.org/abs/2203.07861
+```
+@misc{loeffler2022dont,
+title={Don't Get Me Wrong: How to apply Deep Visual Interpretations to Time Series},
+author={Christoffer Loeffler and Wei-Cheng Lai and Bjoern Eskofier and Dario Zanca and Lukas Schmidt and Christopher Mutschler},
+year={2022},
+eprint={2203.07861},
+archivePrefix={arXiv},
+primaryClass={cs.CV}
+}
+```
 ## Train Model
 1. get training data: [UCR](https://www.cs.ucr.edu/%7Eeamonn/time_series_data_2018/), [NATOPS](http://groups.csail.mit.edu/mug/natops/) 
 ```
